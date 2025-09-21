@@ -13,15 +13,10 @@ with open(INPUT, 'r') as raw:
         list1.append(int(element1))
         list2.append(int(element2))
 
-
 repetitions = {key:list2.count(key) for key in set(list1)}
 
 result = 0
 for i in list1:
     result += i * repetitions.get(i)
 
-
-
 print(result)
-
-
